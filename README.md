@@ -1,1 +1,1 @@
-# sextant-exercise
+# Sextant exercise
