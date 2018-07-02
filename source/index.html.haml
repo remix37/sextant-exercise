@@ -12,71 +12,107 @@ title: Welcome to Middleman
 
 
 
-.container
-  .row
-    .col-md-6.col-lg-5.description.white
-      %h2.text-uppercase Looking to buy an apartment in Paris?
-      %p
-        Whether you are looking for a pied a terre, a family home or simply just to invest, look no further. As estate agents based in
-        = succeed "," do
-          %strong central Paris
-      %p
-        Sextant France, part of the Sextant Group, is a
-        %strong fully registered estate   agency in Paris.
-        This is important as all agents in France are highly regulated, inspected & have to provide proof of liability insurance, insurance for clients’ deposits and work to strictly laid down legislation.
-      %p
-        Register your interest now to view our online properties and have access to our portfolio of
-        %strong 1,300 off the market exclusive mandate properties
-        through the AMEPI network (151 estate agencies in Paris).
-    .col-md-6.col-lg-offset-1.img-header
-      %img.img-responsive{:src => image_path('img-bed.png'), :srcset => " #{image_path('img-bed@2x.png')} 2x, #{image_path('img-bed.png')} 1x", :alt => ""}/
+%section.pb-80
+  .container
+    .row
+      .col-md-6.col-lg-5.description.white
+        %h2.text-uppercase Looking to buy an apartment in Paris?
+        %p
+          Whether you are looking for a pied a terre, a family home or simply just to invest, look no further. As estate agents based in
+          = succeed "," do
+            %strong central Paris
+        %p
+          Sextant France, part of the Sextant Group, is a
+          %strong fully registered estate   agency in Paris.
+          This is important as all agents in France are highly regulated, inspected & have to provide proof of liability insurance, insurance for clients’ deposits and work to strictly laid down legislation.
+        %p
+          Register your interest now to view our online properties and have access to our portfolio of
+          %strong 1,300 off the market exclusive mandate properties
+          through the AMEPI network (151 estate agencies in Paris).
+      .col-md-6.col-lg-offset-1.img-header
+        %img.img-responsive{:src => image_path('img-bed.png'), :srcset => " #{image_path('img-bed@2x.png')} 2x, #{image_path('img-bed.png')} 1x", :alt => ""}/
 
 
-  .row.mt-80
-    .col-md-10.col-md-offset-1
-      %h2.text-uppercase Areas we cover
-      %img.img-responsive{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x", :alt => ""}/
+    .row.mt-80
+      .col-md-10.col-md-offset-1
+        %h2.text-uppercase Areas we cover
+        %img.img-responsive{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x", :alt => ""}/
 
 
-.container
-  .row
-    .col-md-12
-      %h1.text-center.text-uppercase Example properties
+%section#Properties.pt-40.pb-80
+  .container
+    .row
+      .col-md-12
+        %h1.text-center.text-uppercase Example properties
 
-      %img.img-responsive.m-a.mt-40.mb-40{:src => image_path('divider.png'), :srcset => " #{image_path('divider@2x.png')} 2x, #{image_path('divider.png')} 1x", :alt => ""}/
+        %img.img-responsive.m-a.mt-40.mb-80{:src => image_path('divider.png'), :srcset => " #{image_path('divider@2x.png')} 2x, #{image_path('divider.png')} 1x", :alt => ""}/
 
-    .clearfix
+      .clearfix
 
-    .col-md-5.col-md-offset-1.col-xs-6
+      .col-md-5.col-md-offset-1.col-xs-6
+        %h2.price 150.000€
+        .panel-apartment
+          %img.img-responsive{:src => image_path('apartment.png'), :srcset => " #{image_path('apartment@2x.png')} 2x, #{image_path('apartment.png')} 1x", :alt => ""}/
+          .panel-apartment-inner
+            %h3 Paris
+            %p 1 rue de Bercy, 75006
+          .panel-apartment-footer
+            .row
+              .col-sm-7
+                %ul.list-inline.pl-20.pr-20
+                  %li 2 Beds
+                  %li 1 Bath
 
-      .panel-apartment
-        %img.img-responsive{:src => image_path('apartment.png'), :srcset => " #{image_path('apartment@2x.png')} 2x, #{image_path('apartment.png')} 1x", :alt => ""}/
-        .panel-apartment-inner
-          %h3 Paris
-          %p 1 rue de Bercy, 75006
-        .panel-apartment-footer
-          .row
-            .col-sm-7
-              %ul.list-inline.pl-20.pr-20
-                %li 2 Beds
-                %li 1 Bath
+              .col-sm-5
+                %a.btn.btn-default.btn-block{:href => "/"} View
 
-            .col-sm-5
-              %a.btn.btn-default.btn-block{:href => "/"} View
+      .col-md-5.col-xs-6
+        %h2.price 150.000€
+        .panel-apartment
+          %img.img-responsive{:src => image_path('apartment.png'), :srcset => " #{image_path('apartment@2x.png')} 2x, #{image_path('apartment.png')} 1x", :alt => ""}/
+          .panel-apartment-inner
+            %h3 Paris
+            %p 1 rue de Bercy, 75006
+          .panel-apartment-footer
+            .row
+              .col-sm-7
+                %ul.list-inline.pl-20.pr-20
+                  %li 2 Beds
+                  %li 1 Bath
 
-    .col-md-5.col-xs-6
+              .col-sm-5
+                %a.btn.btn-default.btn-block{:href => "/"} View
 
-      .panel-apartment
-        %img.img-responsive{:src => image_path('apartment.png'), :srcset => " #{image_path('apartment@2x.png')} 2x, #{image_path('apartment.png')} 1x", :alt => ""}/
-        .panel-apartment-inner
-          %h3 Paris
-          %p 1 rue de Bercy, 75006
-        .panel-apartment-footer
-          .row
-            .col-sm-7
-              %ul.list-inline.pl-20.pr-20
-                %li 2 Beds
-                %li 1 Bath
+%section.pt-40.pb-80
+  .container
+    .row
+      .col-md-5
+        %h1.text-uppercase Testimonies
+        .owl-carousel.owl-theme
+          .item
+            %h4 1
+          .item
+            %h4 2
+          .item
+            %h4 3
+          .item
+            %h4 4
+          .item
+            %h4 5
+          .item
+            %h4 6
+          .item
+            %h4 7
+          .item
+            %h4 8
+          .item
+            %h4 9
+          .item
+            %h4 10
+          .item
+            %h4 11
+          .item
+            %h4 12
 
-            .col-sm-5
-              %a.btn.btn-default.btn-block{:href => "/"} View
+      .col-md-7
+        %h1.text-uppercase We talk about us
