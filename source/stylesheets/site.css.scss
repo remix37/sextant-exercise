@@ -9,9 +9,12 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3em;
   letter-spacing: 10px;
+  @media screen and (max-width: $screen-md-max){
+    font-size: 2em;
+  }
 }
 
-h2, h3, p {
+h2, h3, p, em {
   font-family: 'Montserrat', serif;
 }
 
@@ -20,6 +23,13 @@ h2 {
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px;
+  @media screen and (max-width: $screen-sm-max){
+    font-size: 1.2em;
+  }
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 .banner-header{
@@ -89,7 +99,10 @@ h2 {
 
 .arrow-bottom {
   position: absolute;
-  bottom: 80px;
+  bottom: 120px;
+  @media screen and (max-width: $screen-sm-max){
+    bottom: 80px;
+  }
   left: calc(50% - 12px);
   animation: animateArrow 1.5s infinite;
 }
@@ -139,4 +152,23 @@ h2 {
   right: 45px;
   position: absolute;
   top: -15px;
+}
+
+#EndContent{
+  @media screen and (min-width: $screen-md-min){
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,0000ff+51,0000ff+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 50%, $st-color 51%, $st-color 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 50%,$st-color 51%,$st-color 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffffff 0%,#ffffff 50%,$st-color 51%,$st-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='$st-color',GradientType=1 ); /* IE6-9 */
+  }
+}
+
+.about-us{
+  background: $st-color;
+}
+
+#Contact{
+  background-color: $st-second-color;
 }

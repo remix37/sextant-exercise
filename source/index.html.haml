@@ -33,6 +33,7 @@ title: Welcome to Middleman
         %img.img-responsive{:src => image_path('img-bed.png'), :srcset => " #{image_path('img-bed@2x.png')} 2x, #{image_path('img-bed.png')} 1x", :alt => ""}/
 
 
+  .container
     .row.mt-80
       .col-md-10.col-md-offset-1
         %h2.text-uppercase Areas we cover
@@ -83,36 +84,28 @@ title: Welcome to Middleman
               .col-sm-5
                 %a.btn.btn-default.btn-block{:href => "/"} View
 
-%section.pt-40.pb-80
+%section#EndContent
   .container
     .row
-      .col-md-5
-        %h1.text-uppercase Testimonies
+      .col-md-5.pt-80.pr-80.pb-80
+        %h1.text-uppercase.mb-40 Testimonies
         .owl-carousel.owl-theme
           .item
-            %h4 1
+            %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
+            %p Margaret & Peter R.
           .item
-            %h4 2
-          .item
-            %h4 3
-          .item
-            %h4 4
-          .item
-            %h4 5
-          .item
-            %h4 6
-          .item
-            %h4 7
-          .item
-            %h4 8
-          .item
-            %h4 9
-          .item
-            %h4 10
-          .item
-            %h4 11
-          .item
-            %h4 12
+            %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
+            %p Margaret & Peter R.
+      .col-md-7.pt-80.pl-80.pb-80.about-us
+        %h1.text-uppercase.mb-40.white We talk about us
+        %img.img-responsive{:src => image_path('logos.png'), :srcset => " #{image_path('logos@2x.png')} 2x, #{image_path('logos.png')} 1x", :alt => ""}/
 
-      .col-md-7
-        %h1.text-uppercase We talk about us
+%section#Contact.pt-40.pb-80
+  .container
+    .row
+      .col-md-12
+        %h1.text-center.text-uppercase Contact us
+
+        %img.img-responsive.m-a.mt-40.mb-80{:src => image_path('divider.png'), :srcset => " #{image_path('divider@2x.png')} 2x, #{image_path('divider.png')} 1x", :alt => ""}/
+
+      .clearfix

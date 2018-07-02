@@ -33,22 +33,6 @@ $loop-step: 5;
   transform: translateY(-50%);
 }
 
-// box-shadow
-@mixin box-shadow($params) {
-  -webkit-box-shadow: $params;
-     -moz-box-shadow: $params;
-          box-shadow: $params;
-}
-
-// transform
-@mixin transform($transforms) {
-	   -moz-transform: $transforms;
-	     -o-transform: $transforms;
-	    -ms-transform: $transforms;
-	-webkit-transform: $transforms;
-          transform: $transforms;
-}
-
 @media screen and (min-width: $screen-md-min) {
 	.row-eq-height {
 	  display: -webkit-box;
@@ -56,17 +40,4 @@ $loop-step: 5;
 	  display: -ms-flexbox;
 	  display: flex;
 	}
-}
-
-/// Mixin printing a linear-gradient
-/// as well as a plain color fallback
-/// and the `-webkit-` prefixed declaration
-/// @access public
-/// @param {Keyword | Angle} $direction - Linear gradient direction
-/// @param {Arglist} $color-stops - List of color-stops composing the gradient
-
-@mixin linear-gradient($direction, $color-stops...) {
-  background: nth(nth($color-stops, 1), 1);
-  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-  background: linear-gradient($direction, $color-stops);
 }
