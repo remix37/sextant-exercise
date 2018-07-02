@@ -1,7 +1,8 @@
 // Colors
 $white-color: #fff;
 $black-color : #000;
-$rr-color: #057fc0;
+$st-color: #24597d;
+$st-second-color: #f4d063;
 
 // Margins
 .m-a {margin: auto;}
@@ -21,6 +22,15 @@ $loop-step: 5;
 			}
 		}
 	}
+}
+
+/* Vertical align */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 // box-shadow
@@ -59,13 +69,4 @@ $loop-step: 5;
   background: nth(nth($color-stops, 1), 1);
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   background: linear-gradient($direction, $color-stops);
-}
-
-/* @include transition(all,2s,ease-out); */
-@mixin transition($what: all, $time: 0.3s, $how: ease-in-out) {
-    -webkit-transition: $what $time $how;
-    -moz-transition:    $what $time $how;
-    -ms-transition:     $what $time $how;
-    -o-transition:      $what $time $how;
-    transition:         $what $time $how;
 }

@@ -1,7 +1,128 @@
 @import "./breakpoints.css.scss";
 @import "./mixins.css.scss";
+@import "./retina.css.scss";
 
 body {
   background-color: #E7E7E7;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  letter-spacing: 10px;
+}
+
+h2, p {
+  font-family: 'Montserrat', serif;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+.banner-header{
   padding-top: 70px;
+  background-color: royalblue;
+  @include retina('../images/background-header.png', 2, cover, center center no-repeat);
+
+  min-height: 300px;
+  max-height: 650px;
+  height: 75vh;
+}
+
+.height-100 {
+  height: 100%;
+
+  .center {
+    @include vertical-align();
+  }
+
+}
+
+.white {
+  color : $white-color;
+}
+
+.panel-apartment {
+  background-color: $white-color;
+  .panel-apartment-inner{
+    padding: 20px;
+  }
+}
+
+.description {
+
+  background: $st-color;
+  padding: 15px 30px 30px;
+
+  @media screen and (min-width: $screen-md-min){
+    position: relative;
+    left: calc(8.33333333% + 15px);
+    bottom: 40px;
+    z-index: 1;
+  }
+
+}
+
+.img-header {
+
+  @media screen and (min-width: $screen-md-min){
+    right: calc(10.66666666% + 15px);
+    position: relative;
+    top: 40px;
+    padding: 0;
+    background: red;
+  }
+
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-md-max){
+    right: calc(8.33333333% + 15px);
+  }
+
+  @media screen and (max-width: $screen-sm-max){
+    display: none;
+  }
+
+  img {width: 100%}
+
+}
+
+.arrow-bottom {
+  position: absolute;
+  bottom: 80px;
+  left: calc(50% - 12px);
+  animation: animateArrow 1.5s infinite;
+}
+
+
+@-webkit-keyframes animateArrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+}
+@keyframes animateArrow {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
 }

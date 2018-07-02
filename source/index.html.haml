@@ -2,6 +2,81 @@
 title: Welcome to Middleman
 ---
 
+.container-fluid.banner-header
+  .row.height-100
+    .col-md-12.height-100
+      %hgroup.center.white
+        %h1.text-center.text-uppercase.mt-0 Paris properties
+        %h2.text-center.text-uppercase.mt-0 for sale
+      %img.arrow-bottom{:src => image_path('arrow-bottom.svg'), :width => "6", :alt => ""}
+
+
+
 .container
-  .col-md-12
-    %p content
+  .row
+    .col-md-6.col-lg-5.description.white
+      %h2.text-uppercase Looking to buy an apartment in Paris?
+      %p
+        Whether you are looking for a pied a terre, a family home or simply just to invest, look no further. As estate agents based in
+        = succeed "," do
+          %strong central Paris
+      %p
+        Sextant France, part of the Sextant Group, is a
+        %strong fully registered estate   agency in Paris.
+        This is important as all agents in France are highly regulated, inspected & have to provide proof of liability insurance, insurance for clients’ deposits and work to strictly laid down legislation.
+      %p
+        Register your interest now to view our online properties and have access to our portfolio of
+        %strong 1,300 off the market exclusive mandate properties
+        through the AMEPI network (151 estate agencies in Paris).
+    .col-md-6.col-lg-offset-1.img-header
+      %img.img-responsive{:src => image_path('img-bed.png'), :srcset => " #{image_path('img-bed@2x.png')} 2x, #{image_path('img-bed.png')} 1x", :alt => ""}/
+
+
+  .row.mt-80
+    .col-md-10.col-md-offset-1
+      %h2.text-uppercase Areas we cover
+      %img.img-responsive{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x", :alt => ""}/
+
+
+.container
+  .row
+    .col-md-12
+      %h1.text-center.text-uppercase Example properties
+
+      %img.img-responsive.m-a.mt-40.mb-40{:src => image_path('divider.png'), :srcset => " #{image_path('divider@2x.png')} 2x, #{image_path('divider.png')} 1x", :alt => ""}/
+
+    .clearfix
+
+    .col-md-5.col-md-offset-1.col-xs-6
+
+      .panel-apartment
+        %img.img-responsive{:src => image_path('apartment.png'), :srcset => " #{image_path('apartment@2x.png')} 2x, #{image_path('apartment.png')} 1x", :alt => ""}/
+        .panel-apartment-inner
+          %h3 Paris
+          %p 1 rue de Bercy, 75006
+        .panel-apartment-footer
+          .row
+            .col-sm-7
+              %ul.list-inline.pl-20.pr-20
+                %li 2 Beds
+                %li 1 Bath
+
+            .col-sm-5
+              %a.btn.btn-default.btn-block{:href => "/"} View
+
+    .col-md-5.col-xs-6
+
+      .panel-apartment
+        %img.img-responsive{:src => image_path('apartment.png'), :srcset => " #{image_path('apartment@2x.png')} 2x, #{image_path('apartment.png')} 1x", :alt => ""}/
+        .panel-apartment-inner
+          %h3 Paris
+          %p 1 rue de Bercy, 75006
+        .panel-apartment-footer
+          .row
+            .col-sm-7
+              %ul.list-inline.pl-20.pr-20
+                %li 2 Beds
+                %li 1 Bath
+
+            .col-sm-5
+              %a.btn.btn-default.btn-block{:href => "/"} View
