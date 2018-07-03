@@ -282,6 +282,10 @@ button.owl-next {
   }
 }
 
+.testimonies-inner{
+  overflow: auto;
+}
+
 #EndContent-inner{
   @media screen and (max-width: $screen-sm-max){
     margin: 0;
