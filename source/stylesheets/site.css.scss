@@ -1,6 +1,7 @@
 @import "./breakpoints.css.scss";
 @import "./mixins.css.scss";
 @import "./retina.css.scss";
+@import "./owl-carousel.css.scss";
 
 body {
 }
@@ -14,7 +15,7 @@ h1 {
   }
 }
 
-h2, h3, p, em {
+h2, h3, p, a, em, ul {
   font-family: 'Montserrat', serif;
 }
 
@@ -196,4 +197,37 @@ h3 {
 
 .form-group {
   margin-bottom: 30px;
+}
+
+// Buttons
+
+.btn-st {
+  padding: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  color: white;
+  background: $st-color;
+}
+
+// Carousel
+
+button.owl-prev,
+button.owl-next {
+  background-color: $st-second-color !important;
+  width: 80px;
+  height: 41px;
+  // font-size: 2em !important;
+  border-radius: 0 !important;
+  .st0{fill:$st-color !important;}
+}
+
+.owl-nav, .owl-dots {
+  margin-top: 20px;
+}
+
+.list-room {
+  padding: 15px 20px;
+  color: $st-color;
+  text-transform: uppercase;
 }

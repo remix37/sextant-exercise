@@ -1,5 +1,5 @@
 ---
-title: Welcome to Middleman
+title: Paris properties for sale
 ---
 
 .container-fluid.banner-header
@@ -59,13 +59,19 @@ title: Welcome to Middleman
             %p 1 rue de Bercy, 75006
           .panel-apartment-footer
             .row
-              .col-sm-7
-                %ul.list-inline.pl-20.pr-20
-                  %li 2 Beds
-                  %li 1 Bath
+              .col-md-8.col-lg-7
+                %ul.list-inline.list-room
+                  %li
+                    %img.mr-5{:src => image_path('icon-bed.svg'), :width => "20", :alt => ""}
+                    2 Beds
+                  %li
+                    %img.mr-5{:src => image_path('icon-bath.svg'), :width => "20", :alt => ""}
+                    1 Bath
 
-              .col-sm-5
-                %a.btn.btn-default.btn-block{:href => "/"} View
+              .col-md-4.col-lg-5
+                %a.btn.btn-default.btn-st.btn-block{:href => "/"}
+                  View
+                  %img.hidden-md.ml-15{:src => image_path('long-arrow-right.svg'), :style => "margin-bottom: 3px;", :width => "25", :align => "middle", :alt => ""}
 
       .col-md-5.col-xs-6
         %h2.price 150.000€
@@ -76,13 +82,19 @@ title: Welcome to Middleman
             %p 1 rue de Bercy, 75006
           .panel-apartment-footer
             .row
-              .col-sm-7
-                %ul.list-inline.pl-20.pr-20
-                  %li 2 Beds
-                  %li 1 Bath
+              .col-md-8.col-lg-7
+                %ul.list-inline.list-room
+                  %li
+                    %img.mr-5{:src => image_path('icon-bed.svg'), :width => "20", :alt => ""}
+                    2 Beds
+                  %li
+                    %img.mr-5{:src => image_path('icon-bath.svg'), :width => "20", :alt => ""}
+                    1 Bath
 
-              .col-sm-5
-                %a.btn.btn-default.btn-block{:href => "/"} View
+              .col-md-4.col-lg-5
+                %a.btn.btn-default.btn-st.btn-block{:href => "/"}
+                  View
+                  %img.hidden-md.ml-15{:src => image_path('long-arrow-right.svg'), :style => "margin-bottom: 3px;", :width => "25", :align => "middle", :alt => ""}
 
 %section#EndContent
   .container
@@ -91,10 +103,24 @@ title: Welcome to Middleman
         %h1.text-uppercase.mb-40 Testimonies
         .owl-carousel.owl-theme
           .item
-            %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
+            %p
+              %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
             %p Margaret & Peter R.
           .item
-            %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
+            %p
+              %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
+            %p Margaret & Peter R.
+          .item
+            %p
+              %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
+            %p Margaret & Peter R.
+          .item
+            %p
+              %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
+            %p Margaret & Peter R.
+          .item
+            %p
+              %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
             %p Margaret & Peter R.
 
       .col-md-7.pt-40.pl-80.pb-80.about-us
@@ -120,25 +146,27 @@ title: Welcome to Middleman
               %input.form-control{:type => "text", :placeholder => "First Name"}
           .col-xs-6
             .form-group
-              %input.form-control{:type => "text", :placeholder => "First Name"}
+              %input.form-control{:type => "text", :placeholder => "Last Name"}
 
           .clearfix
 
           .col-xs-6.col-sm-4
             .form-group
-              %input.form-control{:type => "text", :placeholder => "First Name"}
+              %input.form-control{:type => "text", :placeholder => "Telephone"}
           .col-xs-6.col-sm-4
             .form-group
-              %input.form-control{:type => "text", :placeholder => "First Name"}
+              %input.form-control{:type => "text", :placeholder => "Your Budget"}
           .col-xs-12.col-sm-4
             .form-group
-              %input.form-control{:type => "text", :placeholder => "First Name"}
+              %input.form-control{:type => "text", :placeholder => "Email"}
 
           .clearfix
 
           .col-xs-12
             .form-group
-              %textarea.form-control{:placeholder => "First Name", :rows => "3"}
+              %textarea.form-control{:placeholder => "Comment", :rows => "3"}
 
             .form-group
-              %a.btn.btn-default{:href => "/"} Send
+              %a.btn.btn-default.btn-st{:href => "/"}
+                Send
+                %img.ml-15{:src => image_path('long-arrow-right.svg'), :style => "margin-bottom: 3px;", :width => "25", :align => "middle", :alt => ""}
