@@ -137,9 +137,7 @@ title: Paris properties for sale
 
       .clearfix
 
-      .col-md-4
-        %img.img-responsive.m-a{:src => image_path('book.png'), :srcset => " #{image_path('book@2x.png')} 2x, #{image_path('book.png')} 1x", :alt => ""}/
-      .col-md-8
+      .col-md-8.col-md-push-4
         .row
           .col-xs-6
             .form-group
@@ -170,3 +168,6 @@ title: Paris properties for sale
               %a.btn.btn-default.btn-st{:href => "/"}
                 Send
                 %img.ml-15{:src => image_path('long-arrow-right.svg'), :style => "margin-bottom: 3px;", :width => "25", :align => "middle", :alt => ""}
+
+      .col-md-4.col-md-pull-8
+        %img.img-responsive.m-a{:src => image_path('book.png'), :srcset => " #{image_path('book@2x.png')} 2x, #{image_path('book.png')} 1x", :alt => ""}/
