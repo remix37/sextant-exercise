@@ -14,7 +14,7 @@ title: Welcome to Middleman
 
 %section.pb-80
   .container
-    .row
+    .row.mb-40
       .col-md-6.col-lg-5.description.white
         %h2.text-uppercase Looking to buy an apartment in Paris?
         %p
@@ -35,8 +35,8 @@ title: Welcome to Middleman
 
   .container
     .row.mt-80
-      .col-md-10.col-md-offset-1
-        %h2.text-uppercase Areas we cover
+      .col-md-10.col-md-offset-1.map
+        %h2.text-uppercase.title-map Areas we cover
         %img.img-responsive{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x", :alt => ""}/
 
 
@@ -87,7 +87,7 @@ title: Welcome to Middleman
 %section#EndContent
   .container
     .row
-      .col-md-5.pt-80.pr-80.pb-80
+      .col-md-5.pt-40.pr-80.pb-80
         %h1.text-uppercase.mb-40 Testimonies
         .owl-carousel.owl-theme
           .item
@@ -96,7 +96,8 @@ title: Welcome to Middleman
           .item
             %em Dear Salah, Peter and I just wanted to thank you for your help and advice in our search for a Pied a Terre in Paris. Your local knowledge has been invaluable, and I would happily recommend your service to anyone. Thanks again for everything and keep up the good work!
             %p Margaret & Peter R.
-      .col-md-7.pt-80.pl-80.pb-80.about-us
+
+      .col-md-7.pt-40.pl-80.pb-80.about-us
         %h1.text-uppercase.mb-40.white We talk about us
         %img.img-responsive{:src => image_path('logos.png'), :srcset => " #{image_path('logos@2x.png')} 2x, #{image_path('logos.png')} 1x", :alt => ""}/
 
@@ -109,3 +110,35 @@ title: Welcome to Middleman
         %img.img-responsive.m-a.mt-40.mb-80{:src => image_path('divider.png'), :srcset => " #{image_path('divider@2x.png')} 2x, #{image_path('divider.png')} 1x", :alt => ""}/
 
       .clearfix
+
+      .col-md-4
+        %img.img-responsive.m-a{:src => image_path('book.png'), :srcset => " #{image_path('book@2x.png')} 2x, #{image_path('book.png')} 1x", :alt => ""}/
+      .col-md-8
+        .row
+          .col-xs-6
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "First Name"}
+          .col-xs-6
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "First Name"}
+
+          .clearfix
+
+          .col-xs-6.col-sm-4
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "First Name"}
+          .col-xs-6.col-sm-4
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "First Name"}
+          .col-xs-12.col-sm-4
+            .form-group
+              %input.form-control{:type => "text", :placeholder => "First Name"}
+
+          .clearfix
+
+          .col-xs-12
+            .form-group
+              %textarea.form-control{:placeholder => "First Name", :rows => "3"}
+
+            .form-group
+              %a.btn.btn-default{:href => "/"} Send

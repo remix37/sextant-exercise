@@ -141,6 +141,20 @@ h3 {
   }
 }
 
+// Map
+
+.title-map {
+  display: inline-block;
+  background: $st-second-color;
+  color: $st-color;
+  padding: 30px;
+  position: absolute;
+  right: 75px;
+  top: -25px;
+}
+
+// Properties
+
 #Properties {
   background-color: #E7E7E7;
 }
@@ -148,6 +162,7 @@ h3 {
 .price {
   display: inline-block;
   background: $st-second-color;
+  color: $st-color;
   padding: 12px 18px;
   right: 45px;
   position: absolute;
@@ -171,4 +186,14 @@ h3 {
 
 #Contact{
   background-color: $st-second-color;
+}
+
+.form-control {
+  padding: 25px 20px;
+  border-radius: 0;
+  border: none;
+}
+
+.form-group {
+  margin-bottom: 30px;
 }
