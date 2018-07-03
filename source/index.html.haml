@@ -12,10 +12,10 @@ title: Paris properties for sale
 
 
 
-%section.pb-80
-  .container
-    .row.mb-40
-      .col-md-6.col-lg-5.description.white
+%section#Content
+  .container#Description
+    .row
+      .col-md-6.col-lg-5.description-inner.white
         %h2.text-uppercase Looking to buy an apartment in Paris?
         %p
           Whether you are looking for a pied a terre, a family home or simply just to invest, look no further. As estate agents based in
@@ -33,8 +33,8 @@ title: Paris properties for sale
         %img.img-responsive{:src => image_path('img-bed.png'), :srcset => " #{image_path('img-bed@2x.png')} 2x, #{image_path('img-bed.png')} 1x", :alt => ""}/
 
 
-  .container
-    .row.mt-80
+  .container#Map
+    .row
       .col-md-10.col-md-offset-1.map
         %h2.text-uppercase.title-map Areas we cover
         %img.img-responsive{:src => image_path('map.png'), :srcset => " #{image_path('map@2x.png')} 2x, #{image_path('map.png')} 1x", :alt => ""}/
@@ -97,9 +97,9 @@ title: Paris properties for sale
                   %img.hidden-md.ml-15{:src => image_path('long-arrow-right.svg'), :style => "margin-bottom: 3px;", :width => "25", :align => "middle", :alt => ""}
 
 %section#EndContent
-  .container
-    .row
-      .col-md-5.pt-40.pr-80.pb-80
+  .container#EndContent-inner
+    .row.row-eq-height
+      .col-md-5.pt-40.pr-80.testimonies
         %h1.text-uppercase.mb-40 Testimonies
         .owl-carousel.owl-theme
           .item
