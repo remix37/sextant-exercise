@@ -33,6 +33,16 @@ h3 {
   font-size: 1.2em;
 }
 
+// Header
+
+.navbar {
+  background: $white-color;
+}
+
+.navbar-brand{
+  height: auto;
+}
+
 .banner-header{
   padding-top: 70px;
   background-color: royalblue;
@@ -75,6 +85,11 @@ h3 {
     z-index: 1;
   }
 
+}
+@media screen and (max-width: 530px){
+  .identities{
+    display: none;
+  }
 }
 
 .img-header {

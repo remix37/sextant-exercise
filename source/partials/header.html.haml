@@ -1,17 +1,14 @@
 %nav.navbar.navbar-default.navbar-fixed-top
   .container
-    / Brand and toggle get grouped for better mobile display
-    .navbar-header
-      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#NavbarCollapse", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => "#"} Sextant
-    / Collect the nav links, forms, and other content for toggling
-    #NavbarCollapse.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li
-          %a{:href => "#"} Link
-        %li
-          %a{:href => "#"} Link
+    .row
+      .col-lg-8.col-md-6.col-xs-4
+        %img.mt-15.mb-15{:src => image_path('logo.png'), :srcset => " #{image_path('logo@2x.png')} 2x, #{image_path('logo.png')} 1x", :alt => ""}/
+      .col-lg-2.col-md-3.col-xs-3
+        %img.pull-right.mt-15.mb-15.identities{:src => image_path('identities.png'), :srcset => " #{image_path('identities@2x.png')} 2x, #{image_path('identities.png')} 1x", :alt => ""}/
+      .col-lg-2.col-md-3.col-xs-5
+        %p.mt-15
+          %img{:src => image_path('flag-fr.png'), :srcset => " #{image_path('flag-fr@2x.png')} 2x, #{image_path('flag-fr.png')} 1x", :alt => ""}/
+          FR (0)1 70 61 27 15
+        %p.mb-15
+          %img{:src => image_path('flag-uk.png'), :srcset => " #{image_path('flag-uk@2x.png')} 2x, #{image_path('flag-uk.png')} 1x", :alt => ""}/
+          UK (0)20 7428 4910
