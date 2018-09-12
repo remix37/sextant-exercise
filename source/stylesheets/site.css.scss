@@ -252,11 +252,6 @@ h3 {
   border-radius: 0;
   color: white;
   background: $st-color;
-
-  &:hover{
-    background: darken($st-color, 10%);
-    color: $white-color;
-  }
 }
 
 // Carousel
